@@ -1,58 +1,45 @@
-# Ignore files for ASP.NET
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-*.ide
-
-# ASP.NET Core and MVC project files
+# ASP.NET-specific ignores
 bin/
 obj/
-*.log
-*.dat
+*.user
+*.suo
+*.pdb
 *.cache
+*.log
+*.vs/
+*.vscode/
+*.dbmdl
+*.jfm
+*.generated.cs
+.env
 
-# Ignore files for Visual Studio
-.vscode/
-.vs/
-*.swp
+# Ignore build artifacts
+*.dll
+*.exe
+*.app
+*.so
+*.dylib
 
-# Node.js dependencies (for Vue.js)
+# Ignore package files
+*.nupkg
+*.snupkg
+*.npmignore
 node_modules/
+
+# Vue.js-specific ignores
+/dist/
+/node_modules/
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment files
-.env
-.env.local
-.env.*.local
-
-# Logs
-logs/
-*.log
-
-# Output directories
-dist/
-build/
-
-# Temporary files
-*.tmp
-*.temp
-tmp/
-
-# Database files
-*.mdf
-*.ldf
-
-# Other backup files
-*.bak
-*.bak2
-*.orig
-
-# IDE config files
+# Miscellaneous
 .idea/
-*.suo
-*.psess
-*.vspx
-*.sln.docstates
+.DS_Store
+Thumbs.db
